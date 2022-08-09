@@ -1,0 +1,43 @@
+
+.movement {
+  display: grid;
+  grid-template:
+    "  .    up  topright"
+    "left center right "
+    "  .   down    .   ";
+  max-width: 16px * 3;
+  max-height: 16px * 3;
+
+  &__direction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    max-width: 16px;
+    max-height: 16px;
+
+    &--up {
+      grid-area: up;
+    }
+
+    &--left {
+      grid-area: left;
+    }
+
+    &--right {
+      grid-area: right;
+    }
+
+    &--down {
+      grid-area: down;
+    }
+
+    &--center {
+      grid-area: center;
+    }
+
+    &--topright {
+      grid-area: topright;
+    }
+  }
+}
