@@ -32,7 +32,6 @@ class ColumnController extends Controller
 
     public function destroy(Column $column)
     {
-        abort_unless($column->user_id === auth()->id(), 401);
 
         $column->delete();
 
